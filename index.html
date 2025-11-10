@@ -43,6 +43,7 @@
       border-radius: 8px;
       padding: 12px;
       box-shadow: 0 1px 3px rgba(13,38,80,0.04);
+      
     }
     
     .title-bar {
@@ -88,7 +89,8 @@
     }
     
     .status-display {
-      display: grid;
+      display: flex;
+      justify-content: space-between;
       grid-template-columns: repeat(4, 1fr);
       gap: 6px;
     }
@@ -152,15 +154,19 @@
       height: 400px;
       flex: 1;
       min-height: 300px;
+      
     }
     
     /* 选项卡样式 */
     .tabs-container {
+      display:flex;
+       flex-direction: column;
       background: var(--panel-bg);
       border-radius: 8px;
       overflow: hidden;
       margin-bottom: 8px;
-      box-shadow: 0 1px 3px rgba(13,38,80,0.04);
+     
+
     }
     
     .tab-buttons {
@@ -236,7 +242,7 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       font-size: 13px;
-      width: 80px;
+      width: 160px;
     }
     
     .range {
